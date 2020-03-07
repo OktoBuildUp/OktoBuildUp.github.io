@@ -1,3 +1,5 @@
+body
+	overflow-x: hidden
 header.masthead
 	background: url(../img/bg-pattern.png),linear-gradient(to left,#c16733,#d4ae2d)
 .logo_maine
@@ -202,6 +204,74 @@ section.download
 	h2
 		color: white
 		
+.phone_box, .email_box
+	border: none
+	background: none
+	height: 100px
+	position: relative
+.triangle_phone
+	
+	transform: rotate(180deg)
 
+	
+.phone_text, .email_text
+	display: inline-block
+	position: relative
+	color: white
+	font-family: 'Odibee Sans'
+	font-size: 22px
+.img_wraper_phone, .img_wraper_email
+	display: inline-block
+	position: relative
+.phone_text
+	right: 150vh
+	transition-duration: 1s
+.email_text
+	right: 150vh
+	transition-duration: 1s
+.img_wraper_phone
+	position: absolute
+	top: 0px
+	left: 50%
+	transition: 1s
+.img_wraper_email
+	position: absolute
+	top: 0px
+	right: 50%
+	transition: 1s
+.phone_box:focus
+	.img_wraper_phone
+		left: -70px
+	.phone_text
+		right: 0px
+	.fa_phone_pos
+		left: 33%
+		color: #140c64
+.email_box:focus
+	.fa_email_pos
+		right: 0
+		color: #140c64
+	.img_wraper_email
+		right: -70px
+	.email_text
+		right: 0px
 
+.fa_phone_pos
+	position: absolute
+	transform: translate(-50%, -50%) 
+	top: 60%
+	left: 34%
+	transition: 0.2s
+.fa_email_pos
+	position: absolute
+	transform: translate(-50%, -50%) 
+	top: 30%
+	right: 0
+	transition: 0.2s
+
+.contact
+	i 
+		color: white
+
+	
 
