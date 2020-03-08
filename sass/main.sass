@@ -102,7 +102,6 @@ button:active, button:focus
 		height: 100%
 .features
 	background-image: url(../img/brick_bg_2.jpg)
-	background-position: center
 	background-size: cover
 	background-attachment: fixed
 	padding-bottom: 15px
@@ -203,12 +202,18 @@ section.download
 	padding: 100px 0px 100px 0px
 	h2
 		color: white
-		
+.flex_center
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+
 .phone_box, .email_box
 	border: none
 	background: none
 	height: 100px
 	position: relative
+	display: block
 .triangle_phone
 	
 	transform: rotate(180deg)
@@ -232,12 +237,12 @@ section.download
 .img_wraper_phone
 	position: absolute
 	top: 0px
-	left: 50%
+	left: 49%
 	transition: 1s
 .img_wraper_email
 	position: absolute
 	top: 0px
-	right: 50%
+	right: 49%
 	transition: 1s
 .phone_box:focus
 	.img_wraper_phone
